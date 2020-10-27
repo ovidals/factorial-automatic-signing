@@ -15,7 +15,7 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
 
 ### Notes:
 
-This script is prepared to be used in an empty signing pages, without any previous register. If that's the case, after clicking the new signing button the page will be automatically refreshed. If you have previous signing registers, you will need to refresh the page manually.
+This script is prepared to be used in an empty signing page, without any previous registers. If that's the case, after clicking the new signing button the page will be automatically refreshed. If you have previous signing registers, you will need to refresh the page manually.
 
 -------------
 
