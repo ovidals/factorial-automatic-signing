@@ -1,5 +1,9 @@
 # factorial-automatic-signing
 
+## Description:
+
+This script will signing automatically on the https://factorialhr.es/ tool. A new button will appear on the bottom right corner. With one click all the month will be filled.
+
 ### How To Use:
 
 1. Install Tampermonkey extension for chrome:
