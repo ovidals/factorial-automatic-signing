@@ -1,6 +1,6 @@
 # factorial-automatic-signing
 
-# How To Use:
+### How To Use:
 
 1. Install Tampermonkey extension for chrome:
 https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=es
