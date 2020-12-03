@@ -15,17 +15,32 @@ $(document).ready(function() {
     let promises = [];
 
     appendSigninButtonHtml();
+    appendClearButtonHtml();
     loadEmployeeId();
 
     $("#custom-signing").click(function() {
-        //clearShifts();
         doSigning();
     });
+
+    $("#clear-signing").click(function() {
+        clearShifts();
+    });
+
+
+
 
     function appendSigninButtonHtml() {
         $('body').append(' \
 <button id="custom-signing" style="display: none; color: white; font-size:50px; padding-top: 3px; bottom: 30px; position: fixed; right: 100px; z-index: 994; border-radius: 50%; width: 60px; height: 60px; justify-content: center; background-image: linear-gradient(-60deg,#695ee8,#47a7ff);"> \
 \u270E \
+</button> \
+');
+    }
+
+     function appendClearButtonHtml() {
+        $('body').append(' \
+<button id="clear-signing" style="display: none; color: white; font-size:50px; padding-top: 3px; bottom: 30px; position: fixed; right: 170px; z-index: 994; border-radius: 50%; width: 60px; height: 60px; justify-content: center; background-image: linear-gradient(-60deg,#695ee8,#47a7ff);"> \
+\u267B \
 </button> \
 ');
     }
@@ -39,6 +54,7 @@ $(document).ready(function() {
             {
                 employeeId = data[0].employee_id;
                 $('#custom-signing').css('display', 'flex');
+                $('#clear-signing').css('display', 'flex');
             }
         });
     }
@@ -80,6 +96,9 @@ $(document).ready(function() {
                 xhrFields: { withCredentials: true },
                 success: function (data) {
                     resolve(data)
+                },
+                error: function () {
+                   resolve()
                 }
             });
         });
